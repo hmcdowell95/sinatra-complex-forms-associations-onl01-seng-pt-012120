@@ -9,7 +9,7 @@
 
   <h3>Existing Owners</h3>
   <% @owners.each do |o| %>
-    <input type="checkbox" name="pet[owner_id][]" id="<%= o.id %>" value="<%= o.id %>"><%= o.name %><br>
+    <input type="radio" name="pet[owner_id][]" id="<%= o.id %>" value="<%= o.id %>"><%= o.name %><br>
   <% end %>
   <br>
   
